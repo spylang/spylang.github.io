@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+{% if description %}<meta name="description" content="{{ description }}">
+{% endif %}<link rel="icon" href="logo.svg">
+{% if inline_css %}<style>
+{{ inline_css }}
+</style>
+{% else %}<link rel="stylesheet" href="style.css">
+{% endif %}</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="logo.svg" alt="">SPy</a>
+    <nav>
+      <a href="docs/">Documentation</a>
+      <a href="spy/">Playground</a>
+      <a href="https://github.com/spylang/spy">GitHub</a>
+      <a href="https://discord.gg/wRb29FGZpP">Discord</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+{{ body | safe }}
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="docs/">Documentation</a>
+    <a href="spy/">Playground</a>
+    <a href="https://github.com/spylang/spy">Source code</a>
+    <a href="https://github.com/spylang/spy/blob/main/LICENSE">License</a>
+  </div>
+</footer>
+</body>
+</html>

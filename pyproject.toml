@@ -1,0 +1,15 @@
+[project]
+name = "spylang-site"
+version = "0.0.0"
+description = "Source of the SPy landing page (spylang.github.io)"
+requires-python = ">=3.11"
+dependencies = [
+    "jinja2",
+    "markdown-it-py",
+    "mdit-py-plugins",
+    "python-frontmatter",
+]
+
+[tool.uv]
+# This is a script project, not an installable package.
+package = false
