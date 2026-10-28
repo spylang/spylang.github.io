@@ -7,7 +7,7 @@ description: SPy is a variant of Python designed to be statically compilable whi
 
 ![SPy logo](logo.svg)
 
-# Python, made statically compilable
+# SPy: Static Python
 
 {.lead}
 SPy is a variant of Python designed to be compiled ahead of time
